@@ -10,5 +10,8 @@ void print_vec_int(std::vector<int>& a)
         } else {
             std::cout << " " << a[i];
         }
+        if (i == size - 1) {
+            std::cout << std::endl;
+        }
     }
 }
