@@ -1,0 +1,6 @@
+CompileFlags:
+  Add: 
+    - --target=x86_64-windows-gnu
+    - -I/path/to/.conan2/p/*/include  # conan2路径
+
+  
