@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(testc VERSION 0.1.0 LANGUAGES C CXX)
 
-find_package(fmt)
-
-include_directories(${fmt_include_dirs})
-
 add_executable(testc main.cpp)
 
 # Test Cmake static lib 
@@ -14,4 +10,4 @@ add_executable(testc main.cpp)
 # And in linux, I can step into the shared lib function directly for not only gdb but also lldb.
 add_library(hello_lib SHARED  hello.cpp)
 
-target_link_libraries(testc fmt::fmt hello_lib)
+target_link_libraries(testc hello_lib)
